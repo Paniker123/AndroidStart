@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_brown"
+    android:orientation="vertical"
+    tools:context="com.woodman.androidstart.Activity.LogInActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/start_icon"
+        android:contentDescription="@string/start_icon"
+        android:src="@drawable/ic_android_black" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/edit_text_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/editbox_background"
+
+        android:ems="10"
+        android:hint="@string/hint_enter_your_nick" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/edit_text_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="@string/hint_enter_password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        android:text="@string/btn_text_login"
+        android:textColor="@color/color_wight"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_sing_up"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        android:text="@string/btn_text_sing_up"
+        android:textColor="@color/color_wight"
+        android:textStyle="bold" />
+
+</LinearLayout>
