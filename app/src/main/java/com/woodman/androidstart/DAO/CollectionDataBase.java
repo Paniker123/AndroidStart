@@ -36,6 +36,7 @@ public class CollectionDataBase implements DataBase {
                 ) {
             if (user.getNick() == userNick) {
                 return user;
+
             }
         }
         return null;

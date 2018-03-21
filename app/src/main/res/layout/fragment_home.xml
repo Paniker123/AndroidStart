@@ -5,11 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.woodman.androidstart.Fragment.HomeFragment">
+
     <TextView
         android:id="@+id/text_view_home_fragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:textColor="#000"
-        />
+        android:text="12313213213123123213123213" />
 
 </LinearLayout>

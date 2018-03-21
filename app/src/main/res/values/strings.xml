@@ -32,7 +32,7 @@
     <string name="action_settings">Settings</string>
 
     <string name="fragment_home_title">Home</string>
-
+    <string name="fragment_gallery_title">Gallery</string>
     <string name="fragment_home_text_view_greetings">Hello its`s home fragment!!!</string>
     <string name="title_activity_drawer">DrawerActivity</string>
 
