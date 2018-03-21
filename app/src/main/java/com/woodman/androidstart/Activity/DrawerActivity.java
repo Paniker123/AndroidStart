@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentTransaction;
+
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,6 +16,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.woodman.androidstart.Fragment.GalleryFragment;
 import com.woodman.androidstart.Fragment.HomeFragment;
 import com.woodman.androidstart.R;
 
@@ -22,6 +24,7 @@ public class DrawerActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private Intent intent;
     private HomeFragment homeFragment;
+    private GalleryFragment galleryFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,8 +53,6 @@ public class DrawerActivity extends AppCompatActivity
 
 
 
-        //Обов'язково!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        homeFragment=new HomeFragment();
     }
 
     @Override
@@ -100,7 +101,8 @@ public class DrawerActivity extends AppCompatActivity
             homeFragment=HomeFragment.newInstance();
             fragmentTransaction.replace(R.id.fragment_container,homeFragment);
         } else if (id == R.id.nav_gallery) {
-
+            galleryFragment=GalleryFragment.newInstance("Your name");
+            fragmentTransaction.replace(R.id.fragment_container,galleryFragment);
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
@@ -108,6 +110,7 @@ public class DrawerActivity extends AppCompatActivity
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
+
 
         }
         //Коміт пояснює системі, що дія виконуватиметься над фрагментом. Обов'язково!!!!
